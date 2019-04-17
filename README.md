@@ -1,8 +1,7 @@
 # OS-Simulator
 Simulator which simulates algorithms of Operating System
 
-#Simulations Done
-System Calls (Terminal based GUI)
+# Simulations Done
 Socket Programming
 CPU Scheduling
 Process Synchronization
