@@ -16,7 +16,7 @@
 }
 .statustable{
   position: absolute;
-  top: 15%;
+  top: 18%;
   left: 40%;
   background-color: #FF69B4;
 }
@@ -28,7 +28,7 @@
   height:150px;
   width:1250px;
   position: absolute;
-  top:80%;
+  top:90%;
   left:2%;
   font-size:20px;
   margin-bottom: 15px;

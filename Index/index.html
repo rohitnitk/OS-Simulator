@@ -24,6 +24,28 @@
 
   </head>
 
+  <style>
+
+  column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+
+  .column1 {
+    float: left;
+    padding: 15px;
+    margin:10px
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
+
   <body id="page-top">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -123,7 +145,7 @@
               <button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../Process Scheduling/src/rr.html">Round Robin</a></button>
             </div>
             <br>
-        <div class="row">  
+        <div class="row">
 	      <button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../Process Scheduling/src/priority.html">Priority Scheduling</a></button>
 		<button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../Process Scheduling/src/srtf.html">Shortest Remaining Time First</a></button>
   </div>
@@ -164,8 +186,8 @@
             </div>
             <br>
             <div class="row">
-              <button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../Process Synchronization/cigrate_smoke_wiki.html">Cigarette Smokers Problem</a></button>
-              <button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../Process Synchronization/dining.html">Dining Philosopher Problem</a></button>
+              <button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../Process Synchronization/cigarette_smokers.html">Cigarette Smokers Problem</a></button>
+              <button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../Process Synchronization/sb_wiki.html">Sleeping Barber Problem</a></button>
             </div>
             </div>
 
@@ -197,7 +219,7 @@
               <div class="row">
               <button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../Bankers/index.html">Banker's algorithm</a></button>
           </div>
-          
+
       </section>
 
       <hr class="m-0">resume
@@ -210,14 +232,13 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">DESCRIPTION </h3>
 
-<<<<<<< HEAD
               <p>The memory management function keeps track of the status of each memory location, either allocated or free. It determines how memory is allocated among competing processes, deciding which gets memory, when they receive it, and how much they are allowed. When memory is allocated it determines which memory locations will be assigned. It tracks when memory is freed or unallocated and updates the status.
-=======
-              <p>Disk scheduling is the method that computer operating systems use to decide in which order the block I/O operations will be submitted to storage volumes. I/O scheduling is sometimes called disk scheduling.
->>>>>>> 10991a32a5fa55a54ea7968218e08bd57a870549
               </p>
-		<div class="subheading mb-2">Following Problems are demonstrated in the simulator :
+
+
+		<div class="subheading mb-2"><font color="black">Following Problems are demonstrated in the simulator :
                 <!-- <a href="mailto:name@email.com">saharshsonu40@gmail.com</a> -->
+              </font>
             </div>
 		<p>
 		Memory Management<br>
@@ -242,12 +263,12 @@
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">DESCRIPTION </h3>
-               
+
                <p>The page replacement algorithm decides which memory page is to be replaced. The process of replacement is
-                 sometimes called swap out or write to disk. Page replacement is done when the requested page is not found in 
+                 sometimes called swap out or write to disk. Page replacement is done when the requested page is not found in
                  the main memory (page fault).</p>
-                     
-             
+
+
               <div class="subheading mb-2">Following Problems are demonstrated in the simulator :
                 <!-- <a href="mailto:name@email.com">saharshsonu40@gmail.com</a> -->
               </div>
@@ -263,15 +284,15 @@
               <div class="row">
               <button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../page replacement/lruindex.html">Page Replacement</a></button>
                </div>
-		    
+
 		    <div class="subheading mb-2">wiki:
-                 
+
                   <div class="row">
                 </div>
                   <button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../page replacement/wiki.html">wiki</a></button>
            </div>
               </div>
-            
+
             </div>
             </div>
 
@@ -292,11 +313,10 @@
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">DESCRIPTION </h3>
-		<p>The memory management function keeps track of the status of each memory location, either allocated or free. It determines how memory is allocated among competing processes, deciding which gets memory, when they receive it, and how much they are allowed. When memory is allocated it determines which memory locations will be assigned. It tracks when memory is freed or unallocated and updates the status.</p>
-              <p>Disk scheduling is the method that computer operating systems use to decide in which order the block I/O operations will be submitted to storage volumes. I/O scheduling is sometimes called disk scheduling.
+		<p>Disk scheduling is the method that computer operating systems use to decide in which order the block I/O operations will be submitted to storage volumes. I/O scheduling is sometimes called disk scheduling.
               </p>
             <div class="subheading mb-2">Demo:
-                
+
               </div>
               <div class="row">
               <button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../Disk/disk.html">Disk Scheduling Algorithms</a></button>
@@ -311,11 +331,25 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">DESCRIPTION </h3>
 
-              <p>Disk scheduling is the method that computer operating systems use to decide in which order the block I/O operations will be submitted to storage volumes. I/O scheduling is sometimes called disk scheduling.
-              </p>
-            </div>
+              <p>The allocation method defines how the files are stored in the disk blocks. The direct access nature of the disks gives us the flexibility to implement the files. In many cases, different files or many files are stored on the same disk. The main problem that occurs in the operating system is that how we allocate the spaces to these files so that the utilization of disk is efficient and the quick access to the file is possiblets advantages and disadvantages.
+                <br>
+              The main idea behind contiguous allocation methods is to provide :
+              <br>
+              • Efficient disk space utilization
+              <br>
+              • Fast access to the file blocks
+              </p>            </div>
 
           </div>
+        </div>
+         <div class="subheading mb-2">Demo:
+
+            </div>
+            <div class="row">
+            <button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../FileAllocationAlgorithms/contiguous.html">Contiguous File Allocation</a></button>
+
+             <button type="button" class="btn btn-outline-primary col-lg-4 col-6 px-0"><a href="../FileAllocationAlgorithms/linked.html">Linked File Allocation</a></button>
+        </div>
 
       </section>
 
@@ -324,9 +358,10 @@
           <h2 class="mb-5">Team</h2>
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">DESCRIPTION </h3>
+              <h3 class="mb-0">MEMBERS </h3>
 
-              <p>Write Your Wiki Here .
+              <div class="column1" style="color:grey">
+              <p>171C0231 Raghav Raghuwanshi<br>171CO232 Rahul Kumar<br>171CO233  Rakshith S<br>171CO234     Ravikiran Talawar<br>171CO235     Rohit Kumar<br>171CO236     Rounak Modi<br>171CO237        Sachin K L<br>171CO238     Sanath Ramesh<br>171CO239     Satish<br>171CO240     Saurabh Singhal
               </p>
             </div>
 

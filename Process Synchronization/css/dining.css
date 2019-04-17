@@ -160,7 +160,7 @@ span {
 #random {
 	font-size: 25px;
     position: absolute;
-    top: 20%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 	background: #ff00aa;
