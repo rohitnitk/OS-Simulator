@@ -1,2 +1,5 @@
 # OS-Simulator
-Simulator which simulates algorithms of Operating System
+## About 
+This is an Operating System simulator which simulates the very basic concepts of OS such as CPU scheduling algorithms,<br />
+etc.
+
